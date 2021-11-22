@@ -1,0 +1,8 @@
+.city-weather-wrapper {
+  background-color: hsl(163, 100%, 99%);
+  min-height: 100vh;
+}
+
+.city-weather-message {
+  color: palevioletred;
+}
