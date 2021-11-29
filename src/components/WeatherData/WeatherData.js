@@ -27,6 +27,13 @@ import clouds from "./images/clouds.png";
 export default function WeatherData({ weatherData }) {
   // we then destructure the top level properties
   // from the weatherData object
+
+  // we include an early return statement so that
+  // it fails gracefully when no props are sent
+  // we cannot possible provide the default value
+  // of the props, hence this is the best alternative
+  if (!weatherData) return <p>There is no data!</p>;
+
   const { main, weather, wind, name, sys } = weatherData;
 
   return (

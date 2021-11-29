@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="city-selector-wrapper"
+>
+  <div
+    className="mb-2 input-group"
+  >
+    <input
+      aria-describedby="basic-addon2"
+      aria-label="Recipient's username"
+      className="form-control"
+      id="cityselector"
+      name="cityselector"
+      onChange={[Function]}
+      placeholder="Search your city..."
+    />
+    <button
+      className="btn btn-outline-secondary"
+      disabled={false}
+      id="button-addon2"
+      onClick={[Function]}
+      type="button"
+    >
+      Search
+    </button>
+  </div>
+</div>
+`;

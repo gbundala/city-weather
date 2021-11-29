@@ -28,7 +28,7 @@ export default function CityWeather() {
   // state variables for handling the data
   // and for the various states
   const [weatherData, setWeatherData] = useState({});
-  const [error, setError] = useState("");
+  const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const [citySelection, setCitySelection] = useState("");
   const [searchCity, setSearchCity] = useState("");
@@ -55,6 +55,7 @@ export default function CityWeather() {
     let ignoreSettingState = false;
 
     // fetching the data from the api and managing it
+
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=${APIKey}&units=metric`
     )
@@ -69,6 +70,7 @@ export default function CityWeather() {
           setLoading(false);
         }
       );
+
     return () => {
       // set the variable to true in order not to setWeatherData
       // state variable when the component unmounts

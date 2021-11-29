@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there is no weatherData 1`] = `
+<p>
+  There is no data!
+</p>
+`;
+
+exports[`renders correctly when there is weatherData 1`] = `
+<div
+  className="weather-data-wrapper"
+>
+  <link
+    crossOrigin="anonymous"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    rel="stylesheet"
+  />
+  <div
+    className="container py-5 h-100 card"
+    style={
+      Object {
+        "width": "18rem",
+      }
+    }
+  >
+    <div
+      className="card-body"
+    >
+      <div
+        className="card-title h5"
+      >
+        32.5
+         °C
+      </div>
+      <div
+        className="mb-2 text-muted card-subtitle h6"
+      >
+        Dar es Salaam
+         (
+        TZ
+        )
+      </div>
+      <p
+        className="card-text"
+      >
+        Feels like: 
+        35.04
+         °C
+      </p>
+      <p
+        className="card-text"
+      >
+        Max: 
+        32.5
+        °C ● Min: 
+        32.5
+        °C
+      </p>
+      <div
+        className="list-group list-group-flush"
+        onKeyDown={[Function]}
+      >
+        <div
+          className="list-group-item"
+          data-rr-ui-event-key={null}
+          onClick={[Function]}
+        >
+          <img
+            alt="humidity"
+            src="humidity.png"
+          />
+           
+          49
+          %
+        </div>
+        <div
+          className="list-group-item"
+          data-rr-ui-event-key={null}
+          onClick={[Function]}
+        >
+           
+          <img
+            alt="wind"
+            src="wind-signal.png"
+          />
+           
+          6.64
+           meter/sec
+        </div>
+        <div
+          className="list-group-item"
+          data-rr-ui-event-key={null}
+          onClick={[Function]}
+        >
+          <img
+            alt="clouds"
+            src="clouds.png"
+          />
+           
+          scattered clouds
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
